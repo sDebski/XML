@@ -1,0 +1,49 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="firma">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="produkt">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="nazwa" type="xsd:string"/>
+              <xsd:element name="producent" type="xsd:string"/>
+	      <xsd:element name="cena" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="id" use="required" type="xsd:string"/> 
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="zakup">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="data_zakupu" type="xsd:string" />
+              <xsd:element name="ilosc" type="xsd:string" />
+            </xsd:sequence>
+            <xsd:attribute name="id_ref" type="xsd:string" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+
+
+  <xsd:unique name="produkt_kluczZlozony">
+    <xsd:selector xpath="produkt"/>
+    <xsd:field xpath="nazwa"/>
+    <xsd:field xpath="producent"/>
+  </xsd:unique>
+  
+  <xsd:key name="id_produkt">
+    <xsd:selector xpath="produkt"/>
+    <xsd:field xpath="@id"/>
+  </xsd:key>
+
+  <xsd:keyref name="klucz_ref" refer="id_produkt">
+    <xsd:selector xpath="zakup"/>
+    <xsd:field xpath="@id_ref"/>
+  </xsd:keyref>
+
+  </xsd:element>
+  
+</xsd:schema>
+
+
+

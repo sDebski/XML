@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/css" href="zad1.css" ?> 
+<grupy>
+        <grupa numer="1">
+                <osoba plec="M">
+                        <imie>Imie11</imie>
+                        <nazwisko>Nazw11</nazwisko>
+                        <nr_albumu>12345</nr_albumu>
+                </osoba>
+                <osoba plec="M">
+                        <imie>Imie12</imie>
+                        <nazwisko>Nazw12</nazwisko>
+                        <nr_albumu>123147</nr_albumu>
+                </osoba>
+                <osoba plec="K">
+                        <imie>Imie13</imie>
+                        <nazwisko>Nazw13</nazwisko>
+                        <nr_albumu>126348</nr_albumu>
+                </osoba>
+                <osoba plec="K">
+                        <imie>Imie14</imie>
+                        <nazwisko>Nazw14</nazwisko>
+                        <nr_albumu>122348</nr_albumu>
+                </osoba>
+                <osoba plec="K">
+                        <imie>Imie15</imie>
+                        <nazwisko>Nazw15</nazwisko>
+                        <nr_albumu>123348</nr_albumu>
+                </osoba>
+        </grupa>
+        <grupa numer="2">
+                <osoba plec="M">
+                        <imie>Imie21</imie>
+                        <nazwisko>Nazw21</nazwisko>
+                        <nr_albumu>123345</nr_albumu>
+                </osoba>
+                <osoba plec="M">
+                        <imie>Imie22</imie>
+                        <nazwisko>Nazw22</nazwisko>
+                        <nr_albumu>123147</nr_albumu>
+                </osoba>
+                <osoba plec="K">
+                        <imie>Imie23</imie>
+                        <nazwisko>Nazw23</nazwisko>
+                        <nr_albumu>126348</nr_albumu>
+                </osoba>
+                <osoba plec="K">
+                        <imie>Imie24</imie>
+                        <nazwisko>Nazw24</nazwisko>
+                        <nr_albumu>122348</nr_albumu>
+                </osoba>
+                <osoba plec="K">
+                        <imie>Imie25</imie>
+                        <nazwisko>Nazw25</nazwisko>
+                        <nr_albumu>123348</nr_albumu>
+                </osoba>
+        </grupa>
+        <grupa numer="3">
+                <osoba plec="M">
+                        <imie>Imie31</imie>
+                        <nazwisko>Nazw31</nazwisko>
+                        <nr_albumu>1234523</nr_albumu>
+                </osoba>
+                <osoba plec="M">
+                        <imie>Imie32</imie>
+                        <nazwisko>Nazw32</nazwisko>
+                        <nr_albumu>1231247</nr_albumu>
+                </osoba>
+                <osoba plec="K">
+                        <imie>Imie33</imie>
+                        <nazwisko>Nazw33</nazwisko>
+                        <nr_albumu>1263348</nr_albumu>
+                </osoba>
+                <osoba plec="K">
+                        <imie>Imie34</imie>
+                        <nazwisko>Nazw14</nazwisko>
+                        <nr_albumu>122348</nr_albumu>
+                </osoba>
+                <osoba plec="K">
+                        <imie>Imie35</imie>
+                        <nazwisko>Nazw35</nazwisko>
+                        <nr_albumu>123348</nr_albumu>
+                </osoba>
+        </grupa>
+
+</grupy>
+

@@ -1,0 +1,19 @@
+<!ENTITY % plik1 SYSTEM "file1.txt">
+<!ENTITY % plik2 SYSTEM "file2.txt">
+<!ENTITY % plik3 SYSTEM "file3.txt">
+
+
+
+
+
+<!ELEMENT zamowienie (adres, produkty)>
+<!ATTLIST zamowienie numer_zamowienia CDATA #REQUIRED>
+<!ELEMENT adres (miejsce, ulica, kod_pocztowy)>
+<!ELEMENT ulica (#PCDATA)>
+<!ATTLIST adres termin_dostarczenia CDATA #IMPLIED>
+<!ATTLIST adres kraj (Polska) #FIXED "Polska">
+<!ELEMENT produkty (artykuly)>
+
+%plik1;
+%plik2;
+%plik3;

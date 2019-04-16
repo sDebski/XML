@@ -1,0 +1,43 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+        <xsd:element name="ludzie">
+                <xsd:complexType>
+                        <xsd:sequence>
+                                <xsd:element name="osoba" type="osoba_type"/>
+                                <xsd:element name="adres" type="adres_type"/>
+                        </xsd:sequence>
+                </xsd:complexType>
+        </xsd:element>
+
+	<xsd:attributeGroup name="attr_grupa">
+			<xsd:attribute name="pesel" type="xsd:integer"/>
+			<xsd:attribute name="NIP" type="xsd:integer"/>
+	</xsd:attributeGroup>
+
+	<xsd:group name="osoba_grupa">
+		<xsd:sequence>
+			<xsd:element name="imie" type="xsd:string" />
+			<xsd:element name="nazwisko" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:group>
+
+        <xsd:group name="adres_grupa">
+                        <xsd:sequence>
+                                <xsd:element name="ulica" type="xsd:string"/>
+                                <xsd:element name="nr_domu" type="xsd:integer"/>
+                        </xsd:sequence>
+        </xsd:group>
+
+
+	<xsd:complexType name="osoba_type">
+		<xsd:group ref="osoba_grupa"/>
+		<xsd:attributeGroup ref="attr_grupa"/>
+	</xsd:complexType>
+
+       <xsd:complexType name="adres_type">
+                <xsd:group ref="adres_grupa"/>
+        </xsd:complexType>
+
+
+</xsd:schema>
+

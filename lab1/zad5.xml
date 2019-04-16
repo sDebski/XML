@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- sprzet komputerowy -->
+<sprzet_komputerowy>
+	<procesor rok_wydania="2005">
+		<wydawca>Intel</wydawca>
+		<nazwa>Intel Core I3</nazwa>
+	</procesor>
+	<plyta_glowna rok_wydania="2008">
+		<nazwa>Gigabyte Z170X-Gaming G1</nazwa>
+		<producent>Intel</producent>
+		<pojemnosc_RAM>64 GB</pojemnosc_RAM>
+	</plyta_glowna>
+	<pamiec rok_wydania="2010">
+		<nazwa>Pamiec ProX7</nazwa>
+		<pojemnosc>4GB</pojemnosc>
+	</pamiec>
+	<urzadzenia_peryferyjne>
+		<dysk_twardy>
+			<rodzaj>HDD</rodzaj>
+			<pojemnosc>500 GB</pojemnosc>
+			<producent>Intel</producent>
+		</dysk_twardy>
+		<monitor>
+			<producent>Samsung</producent>
+			<przekatna>32&apos;&apos;</przekatna>
+		</monitor>
+		<klawiatura>
+			<producent>Razer</producent>
+			<typ>mechaniczna</typ>
+			<kolor>czarny</kolor>
+		</klawiatura>
+		<mysz>
+			<producent>SteelSeries</producent>	
+			<kolor>czarny</kolor>
+			<waga jednostka="gram">87.5</waga>
+		</mysz>			
+	</urzadzenia_peryferyjne>
+</sprzet_komputerowy>
+		
+		
+

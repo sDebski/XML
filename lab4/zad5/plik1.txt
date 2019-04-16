@@ -1,0 +1,8 @@
+
+
+                                <film>
+                                        <tytul>Lord of the Rings</tytul>
+                                        <rezyser>Peter Jackson</rezyser>
+                                        <rok_wydania>2000</rok_wydania>
+                                        <czas_trwania>140 minut</czas_trwania>
+                                </film>

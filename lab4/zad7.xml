@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE matura SYSTEM "zad7.dtd">
+
+<matura>
+	<przedmiot procent="58%" poziom="podstawowy">
+		<nazwa>Matematyka</nazwa>
+		<punkty>29</punkty>
+	</przedmiot>
+	<przedmiot procent="37%" poziom="rozszerzony">
+		<nazwa>Biologia</nazwa>
+		<punkty>74</punkty>
+	</przedmiot>
+	<przedmiot procent="80%" poziom="podstawowy">
+		<nazwa>Angielski</nazwa>
+		<punkty>40</punkty>
+	</przedmiot>
+	<przedmiot procent="90%" poziom="podstawowy">
+		<nazwa>Polski</nazwa>
+		<punkty>45</punkty>
+	</przedmiot>
+</matura>

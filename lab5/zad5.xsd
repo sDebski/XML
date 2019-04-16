@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="kolor">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="czerwony"  type="ograniczenie"/>
+				<xsd:element name="zielony" type="ograniczenie"/>
+				<xsd:element name="niebieski" type="ograniczenie"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="ograniczenie">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="255"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

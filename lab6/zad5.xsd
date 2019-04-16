@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema targetNameSpace="http://costam" xmlns="http://costam" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xsd:element name="sklep">
+    <xsd:complexType>
+      <xsd:sequence>      
+	<xsd:element name="plyta" type="plyta_type" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="plyta_type">
+    <xsd:sequence>
+      <xsd:element name="tytul" type="xsd:string">
+        <xsd:attribute name="tlumaczenie" use="optional" type="xsd:string" form="qualified" />
+      </xsd:element>
+      <xsd:element name="wykonawca" type="xsd:string"/>
+      <xsd:element name="cena">
+        <xsd:attribute name="waluta" use="required" default="zł" type="waluta_type"/>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="waluta_type">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9]*[0-9]\.[0-9][0-9]" />
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
+
+

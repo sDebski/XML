@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="osoba">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="imie" type="imie_type"/>
+				<xsd:element name="nazwisko" type="nazwisko_type"/>
+				<xsd:element name="numer" type="numer_type"/>
+				<xsd:element name="plec" type="plec_type"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+	<xsd:simpleType name="imie_type">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="3"/>
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+        <xsd:simpleType name="nazwisko_type">
+                <xsd:restriction base="xsd:string">
+                        <xsd:minLength value="3"/>
+                        <xsd:maxLength value="30"/>
+                </xsd:restriction>
+	</xsd:simpleType>
+
+        <xsd:simpleType name="plec_type">
+                <xsd:restriction base="xsd:string">
+                	<xsd:enumeration value="mezczyzna"/>
+			<xsd:enumeration value="kobieta"/>
+                </xsd:restriction>
+        </xsd:simpleType>
+
+        <xsd:simpleType name="numer_type">
+                <xsd:restriction base="xsd:string">
+                        <xsd:length value="6"/>
+                </xsd:restriction>
+        </xsd:simpleType>
+
+</xsd:schema>

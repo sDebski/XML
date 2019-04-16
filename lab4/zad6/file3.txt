@@ -1,0 +1,6 @@
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT nr_wydania (#PCDATA)>
+<!ELEMENT wykonawca (#PCDATA)>
+<!ELEMENT wydawca (#PCDATA)>
+<!ELEMENT miejsc (#PCDATA)>
+

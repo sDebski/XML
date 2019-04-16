@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!ENTITY % Stara_matura "IGNORE">
+<!ENTITY % Nowa_matura "INCLUDE">
+<!ENTITY % pc "#PCDATA">
+
+<!ELEMENT matura (przedmiot*)>
+
+<![%Stara_matura; [
+<!ELEMENT przedmiot (nazwa, ocena)>
+<!ATTLIST przedmiot wynik (zal|nzal) #REQUIRED>
+<!ELEMENT ocena (%pc;)>
+]]>
+
+<![%Nowa_matura; [ 
+<!ELEMENT przedmiot (nazwa, punkty)>
+<!ELEMENT punkty (%pc;)>
+<!ATTLIST przedmiot procent CDATA "0%">
+<!ATTLIST przedmiot poziom (podstawowy|rozszerzony) "podstawowy">
+
+]]>
+
+<!ELEMENT nazwa (%pc;)>
+

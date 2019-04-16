@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ENTITY % cd "CDATA">
+<!ENTITY % r "#REQUIRED">
+<!ENTITY % pc "#PCDATA">
+<!ENTITY % d "dziecko">
+<!ENTITY % s "student">
+<!ENTITY % p "pracownik">
+<!ENTITY % i "imie">
+<!ENTITY % n "nazwisko">
+<!ENTITY % du "data_urodzenia">
+
+<!ELEMENT osoby ( (%d;)*, (%s;)*, (%p;)*) >
+<!ELEMENT %d; (%i;, %n;, %du;) >
+<!ELEMENT %s; (%i;, %n;, %du;) >
+<!ELEMENT %p; (%i;, %n;, %du;, stanowisko) >
+<!ATTLIST %d; plec (k|m) %r; >
+<!ATTLIST %d; pesel %cd; %r; >
+<!ATTLIST %s; plec (k|m) %r; >
+<!ATTLIST %s; pesel %cd; %r; >
+<!ATTLIST %s; nr_albumu %cd; %r; >
+<!ATTLIST %p; plec (k|m) %r; >
+<!ATTLIST %p; pesel %cd; %r; >
+<!ELEMENT %i; (%pc;) >
+<!ELEMENT %n; (%pc;) >
+<!ELEMENT %du; (%pc;) >
+<!ELEMENT nr_albumu (%pc;) >
+<!ELEMENT stanowisko (%pc;) >
+

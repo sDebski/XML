@@ -1,0 +1,10 @@
+<!ELEMENT glowny (nazwa?, dzial*)>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT dzial (pracownik+)>
+<!ELEMENT pracownik (imie, nazwisko, data_urodzenia)>
+<!ATTLIST pracownik plec (m|k|bd) "bd">
+<!ATTLIST pracownik numer_pesel NMTOKEN #REQUIRED>
+<!ATTLIST pracownik opis NMTOKENS #IMPLIED>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT data_urodzenia (#PCDATA)> 

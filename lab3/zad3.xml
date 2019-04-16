@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE glowny SYSTEM "zad3.dtd">
+<glowny>
+	<unikatowy1 idU1="f5"></unikatowy1>
+	<unikatowy2 idU2="d5"></unikatowy2>
+	<pobrany id="d5"></pobrany>
+</glowny>

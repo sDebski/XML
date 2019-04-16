@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osoba xmlns:xsi=
+"http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="zad6.xsd">
+	<imie>Maria</imie>
+	<nazwisko>Kowalska</nazwisko>
+	<numer>123456</numer>
+	<plec>kobieta</plec>
+</osoba>
+

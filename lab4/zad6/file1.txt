@@ -1,0 +1,7 @@
+<!ELEMENT artykuly (artykul+)>
+<!ELEMENT artykul (film|ksiazka|plyta)>
+<!ATTLIST artykul id ID #REQUIRED>
+<!ELEMENT film (tytul, rezyser, rok_wydania, czas_trwania)>
+<!ELEMENT ksiazka (tytul, autor, rok_wydania, nr_wydania)>
+<!ELEMENT plyta (tytul, wykonawca, wydawca, rok_wydania)>
+<!ELEMENT miejsce (#PCDATA)>

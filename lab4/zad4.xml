@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE glowny SYSTEM "zad4.dtd">
+
+<glowny>
+	<element1>cos</element1>
+	<element2>cos</element2>
+	napis
+	<element2>cos</element2>
+	<element2>cos</element2>
+	napis2
+	<element1>cos</element1>
+	<element2>cos</element2>
+	<element1>cos</element1>
+</glowny>

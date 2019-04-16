@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- szkola -->
+<szkola>
+	<nauczyciele>
+		<opis>NAUCZYCIELE</opis>
+		<nauczyciel plec="K" wlosy="blond">
+			<imie>Maria</imie>
+			<nazwisko>Necel</nazwisko>
+			<wiek>45</wiek>
+		</nauczyciel>
+		
+                <nauczyciel plec="K" wlosy="brak">
+                        <imie>Agata</imie>
+                        <nazwisko>Necel</nazwisko>
+                        <wiek>34</wiek>
+                </nauczyciel>
+
+                <nauczyciel plec="M" wlosy="brak">
+                        <imie>Marian</imie>
+                        <nazwisko>Nietze</nazwisko>
+                        <wiek>49</wiek>
+                </nauczyciel>
+
+	</nauczyciele>
+	<pracownicy>
+		<opis>PRACOWNICY</opis>
+		<pracownik plec="M" wzrost="189">
+                        <imie>Marian</imie>
+                        <nazwisko>Inny</nazwisko>
+                        <wiek>49</wiek>
+		</pracownik>
+                <pracownik plec="K" wzrost="170">
+                        <imie>Marianna</imie>
+                        <nazwisko>Inna</nazwisko>
+                        <wiek>49</wiek>
+                </pracownik>
+                <pracownik plec="M" wzrost="180">
+                        <imie>Marian</imie>
+                        <nazwisko>Tez</nazwisko>
+                        <wiek>35</wiek>
+                </pracownik>
+
+	</pracownicy>
+	<uczniowie>
+		<opis>UCZNIOWIE</opis>
+		<uczen plec="M">
+                        <imie>Jas</imie>
+                        <nazwisko>Inna</nazwisko>
+                        <wiek>9</wiek>
+			<opis>Ulubiona zabawa to berek</opis>
+		</uczen>
+                <uczen plec="M">
+                        <imie>Marianek</imie>
+                        <nazwisko>Inn</nazwisko>
+                        <wiek>10</wiek>
+			<opis>Ma siostre Kasie</opis>
+                </uczen>
+                <uczen plec="M">
+                        <imie>Antos</imie>
+                        <nazwisko>In</nazwisko>
+                        <wiek>8</wiek>
+			<opis>Lubi rowery</opis>
+                </uczen>
+
+	</uczniowie>
+</szkola>
+
+
+
+
+
+
+
+

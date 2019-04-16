@@ -1,0 +1,7 @@
+<!ELEMENT glowny (unikatowy1+, unikatowy2+, pobrany+)>
+<!ELEMENT unikatowy1 (#PCDATA)>
+<!ELEMENT unikatowy2 (#PCDATA)>
+<!ELEMENT pobrany (#PCDATA)>
+<!ATTLIST unikatowy1 idU1 ID #REQUIRED>
+<!ATTLIST unikatowy2 idU2 ID #REQUIRED>
+<!ATTLIST pobrany id IDREF #REQUIRED>

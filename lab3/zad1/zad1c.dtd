@@ -1,0 +1,3 @@
+<!ELEMENT glowny (((pierwszy, pierwszy, pierwszy) | (pierwszy, pierwszy, pierwszy, pierwszy) | (pierwszy, pierwszy, pierwszy, pierwszy, pierwszy) | (pierwszy, pierwszy, pierwszy, pierwszy, pierwszy, pierwszy)), drugi+ )> 
+<!ELEMENT pierwszy EMPTY>
+<!ELEMENT drugi EMPTY>

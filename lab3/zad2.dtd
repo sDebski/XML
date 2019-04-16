@@ -1,0 +1,6 @@
+<!ELEMENT glowny (podrzedny, podrzedny, podrzedny, podrzedny, podrzedny)>
+<!ATTLIST glowny atrybut1 ID #REQUIRED>
+<!ATTLIST glowny atrybut2 (cos) #IMPLIED>
+<!ATTLIST glowny atrybut3 (w1|w2|w3) "w1" >
+<!ELEMENT podrzedny EMPTY>
+

@@ -1,0 +1,11 @@
+<!ENTITY % z "zamowienie">
+<!ENTITY % ad "adres">
+<!ENTITY % ar "artykul">
+<!ENTITY % pc "#PCDATA">
+<!ENTITY % t "tytul">
+<!ENTITY % r "#REQUIRED">
+
+<!ELEMENT %z; (%ad;, produkty)>
+<!ATTLIST %z; numer_zamowienia CDATA %r;>
+<!ELEMENT %ad; (miejsce, ulica, kod_pocztowy)>
+<!ELEMENT ulica (#PCDATA)>

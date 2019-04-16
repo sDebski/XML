@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE nauka SYSTEM "zad4.dtd">
+<nauka>
+    	<rodzaje>
+		<rodzaj skrot="m">męski</rodzaj>
+		<rodzaj skrot="z">żeński</rodzaj>
+		<rodzaj skrot="n">nijaki</rodzaj>
+	</rodzaje>
+	<rzeczowniki>
+		<rzeczownik rodzaj="m">
+			<nazwa>Kwiat</nazwa>
+		</rzeczownik>
+		<rzeczownik rodzaj="z">
+			<nazwa>Kawa</nazwa>
+			<synonimy>Kawusia Neska</synonimy>
+		</rzeczownik>
+		<rzeczownik rodzaj="m">
+			<nazwa>Lekarz</nazwa>
+			<synonimy>Doktor Medyk</synonimy>
+		</rzeczownik>
+		<rzeczownik rodzaj="n">
+			<nazwa>Okno</nazwa>
+		</rzeczownik>
+		<rzeczownik rodzaj="z">
+			<nazwa>Ziemia</nazwa>
+			<synonimy>Grunt Gleba Rola</synonimy>
+		</rzeczownik>
+		<rzeczownik rodzaj="n">
+			<nazwa>Ziarno</nazwa>
+			<synonimy>Nasienie</synonimy>
+		</rzeczownik>
+		<rzeczownik rodzaj="n">
+			<nazwa>Zwierzę</nazwa>
+			<synonimy>Bestia Stworzenie</synonimy>
+		</rzeczownik>
+		<rzeczownik rodzaj="z">
+			<nazwa>Dziupla</nazwa>
+		</rzeczownik>
+		<rzeczownik rodzaj="m">
+			<nazwa>Pies</nazwa>
+		</rzeczownik>
+	</rzeczowniki>
+</nauka>

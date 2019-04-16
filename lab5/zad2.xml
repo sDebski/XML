@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<zamowienie xmlns:xsi=
+"http://www.w3.org/2001/XMLSchema-instance"	
+	xsi:noNamespaceSchemaLocation="zad2.xsd">
+	<cena>2500</cena>
+	<adres>Sitno 136</adres>
+	<kontakt>668505015</kontakt>
+	<towar>masło</towar>
+</zamowienie>

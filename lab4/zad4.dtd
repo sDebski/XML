@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ENTITY % el3 "element1">
+<!ENTITY % el2 "element2">
+<!ENTITY % el1 "#PCDATA">
+
+
+<!ELEMENT glowny (%el1;|%el2;|%el3;)* >
+<!ELEMENT element1 (#PCDATA) >
+<!ELEMENT element2 (#PCDATA)>

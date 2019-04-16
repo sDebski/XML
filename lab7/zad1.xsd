@@ -1,0 +1,55 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:attribute name="plec">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="M"/>
+				<xsd:enumeration value="K"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+
+
+
+        <xsd:element name="osoba">
+                <xsd:complexType>
+                        <xsd:sequence>
+                                <xsd:element name="imie" type="xsd:string"/>
+                                <xsd:element name="nazwisko" type="xsd:string"/>
+                        </xsd:sequence>
+			<xsd:attribute ref="plec" use="required"/>
+                </xsd:complexType>
+        </xsd:element>
+
+	<xsd:element name="ludzie">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nauczyciele" type="n_type"/>
+				<xsd:element name="uczniowie" type="u_type"/>
+				<xsd:element name="pozostali" type="p_type"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:complexType name="n_type">
+		<xsd:sequence>
+			<xsd:element ref="osoba" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+        <xsd:complexType name="u_type">
+                <xsd:sequence>
+                        <xsd:element ref="osoba" />
+                </xsd:sequence>
+        </xsd:complexType>
+
+
+        <xsd:complexType name="p_type">
+                <xsd:sequence>
+                        <xsd:element ref="osoba" />
+                </xsd:sequence>
+        </xsd:complexType>
+
+</xsd:schema>

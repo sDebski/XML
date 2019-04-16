@@ -1,0 +1,8 @@
+<!ELEMENT film (%t;, rezyser, rok_wydania, czas_trwania)>
+<!ELEMENT ksiazka (%t;, autor, rok_wydania, nr_wydania)>
+<!ELEMENT plyta (%t;, wykonawca, wydawca, rok_wydania)>
+<!ELEMENT miejsce (%pc;)>
+<!ELEMENT kod_pocztowy (%pc;)>
+<!ELEMENT %t; (%pc;)>
+<!ELEMENT rezyser (%pc;)>
+

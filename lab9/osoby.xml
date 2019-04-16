@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<lista>
+	<osoba plec="k">
+		<imie>Nadia</imie>
+		<nazwisko>Ebacka</nazwisko>
+		<wiek>45</wiek>
+		<grupa>1</grupa>
+	</osoba>
+	<osoba plec="m">
+		<imie>Ksawery</imie>
+		<nazwisko>Melon</nazwisko>
+		<wiek>24</wiek>
+		<grupa>3</grupa>
+	</osoba>
+	<osoba plec="m">
+		<imie>Borys</imie>
+		<nazwisko>Pokrzyk</nazwisko>
+		<wiek>33</wiek>
+		<grupa>2</grupa>
+	</osoba>
+	<osoba plec="k">
+		<imie>Balladyna</imie>
+		<nazwisko>Malina</nazwisko>
+		<wiek>68</wiek>
+		<grupa>1</grupa>
+	</osoba>
+	<osoba plec="k">
+		<imie>Dafroza</imie>
+		<nazwisko>Trawnik</nazwisko>
+		<wiek>41</wiek>
+		<grupa>1</grupa>
+	</osoba>
+	<osoba plec="k">
+		<imie>Abira</imie>
+		<nazwisko>Bogata</nazwisko>
+		<wiek>27</wiek>
+		<grupa>3</grupa>
+	</osoba>
+	<osoba plec="m">
+		<imie>Felin</imie>
+		<nazwisko>Dziurawiec</nazwisko>
+		<wiek>30</wiek>
+		<grupa>3</grupa>
+	</osoba>
+	<osoba plec="k">
+		<imie>Grzymisława</imie>
+		<nazwisko>Chmiel</nazwisko>
+		<wiek>35</wiek>
+		<grupa>2</grupa>
+	</osoba>
+	<osoba plec="m">
+		<imie>Benicjusz</imie>
+		<nazwisko>Naparczywy</nazwisko>
+		<wiek>27</wiek>
+		<grupa>1</grupa>
+	</osoba>
+	<osoba plec="m">
+		<imie>Długomił</imie>
+		<nazwisko>Cytrynka</nazwisko>
+		<wiek>44</wiek>
+		<grupa>2</grupa>
+	</osoba>
+</lista>

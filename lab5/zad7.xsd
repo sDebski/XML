@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="punkty_type">
+		<xsd:union memberTypes="brak_danych wynik_punktow"/>
+	</xsd:simpleType>
+
+
+
+	<xsd:element name="punkty" type="punkty_type"/>
+
+	
+        <xsd:simpleType name="liczby">
+                <xsd:restriction base="xsd:int">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="10"/>
+                </xsd:restriction>
+        </xsd:simpleType>
+
+
+        <xsd:simpleType name="lista_punktow">
+                <xsd:list itemType="liczby"/>
+        </xsd:simpleType>
+
+
+
+	<xsd:simpleType name="wynik_punktow">
+		<xsd:restriction base="lista_punktow">
+			<xsd:length value="5"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="brak_danych">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="brak danych" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

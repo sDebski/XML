@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<pracownik xmlns:xsi=
+"http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="zad1.xsd">
+	<imie>Jan</imie>
+	<nazwisko>Kowalski</nazwisko>
+	<wiek>35</wiek>
+	<data_urodzenia>1990-02-20</data_urodzenia>
+	<pensja>4500</pensja>
+</pracownik>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ludzie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="zad1.xsd">
+		<osoba pesel="197121000000" NIP="1234567890">
+			<imie>Maria</imie>
+			<nazwisko>Kowalska</nazwisko>
+		</osoba>
+		<adres>
+			<ulica>Piastowska</ulica>
+			<nr_domu>10</nr_domu>
+		</adres>
+</ludzie>

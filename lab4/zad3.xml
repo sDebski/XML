@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE osoby SYSTEM "zad3.dtd">
+
+<osoby>
+	<dziecko plec="m" pesel="123456">
+		<imie>Janek</imie>
+		<nazwisko>Kowalski</nazwisko>
+		<data_urodzenia>10.12.2015</data_urodzenia>
+		
+	</dziecko>
+	<student plec="k" pesel="1231523453" nr_albumu="1212415">
+		<imie>Maria</imie>
+		<nazwisko>Kowalska</nazwisko>
+		<data_urodzenia>10.05.2005</data_urodzenia>
+	</student>
+	<pracownik plec="m" pesel="1214253453">
+		<imie>Michal</imie>
+		<nazwisko>Marcel</nazwisko>
+		<data_urodzenia>05.05.2000</data_urodzenia>
+		<stanowisko>Wozny</stanowisko>
+	</pracownik>
+</osoby>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE stopka [
+<!ELEMENT stopka (#PCDATA)>
+<!ENTITY autor "Szymon Dębski">
+<!ENTITY copy "&#169;">
+]>
+<stopka>&autor;&copy;</stopka>

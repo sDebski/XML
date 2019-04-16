@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+        <xsd:element name="litery" type="extended_litery">
+        </xsd:element>
+
+        <xsd:simpleType name="litery_type">
+               <xsd:restriction base="xsd:string">
+                        <xsd:pattern 
+			value="([a-z]*[A-Z][a-z]*){2,5}" />
+                </xsd:restriction>
+        </xsd:simpleType>
+
+
+	<xsd:complexType name="extended_litery">
+            <xsd:simpleContent>
+                        <xsd:extension base="litery_type">
+                                <xsd:attribute name="id" type="attr_type"  use="required"/>
+                        </xsd:extension>
+                </xsd:simpleContent>
+	</xsd:complexType>	
+
+
+
+	<xsd:simpleType name="attr_type">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern
+			value="([a-z]|[A-Z])([a-z]|[A-Z]|[0-9])*" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+</xsd:schema>
+
+
+

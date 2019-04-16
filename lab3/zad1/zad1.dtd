@@ -1,0 +1,2 @@
+<!ELEMENT glowny (podrzedny, podrzedny, podrzedny, podrzedny, podrzedny+)>
+<!ELEMENT podrzedny EMPTY>

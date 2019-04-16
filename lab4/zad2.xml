@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE wyniki [
+<!ELEMENT wyniki (przedmiot*) >
+<!ELEMENT przedmiot (nazwa, egzaminator, rodzaj, ocena) >
+<!ELEMENT egzaminator (tytul, imie, nazwisko) >
+<!ELEMENT nazwa (#PCDATA) >
+<!ELEMENT rodzaj (#PCDATA) >
+<!ELEMENT ocena (#PCDATA) >
+<!ELEMENT tytul (#PCDATA) >
+<!ELEMENT imie (#PCDATA) >
+<!ELEMENT nazwisko (#PCDATA) >
+
+<!ENTITY niedostateczny "ndst">
+<!ENTITY dostateczny "dst">
+<!ENTITY dostateczny_plus "dst+">
+<!ENTITY dobry "db">
+<!ENTITY dobry_plus "db+">
+<!ENTITY bardzo_dobry "bdb">
+
+<!ENTITY wykład "wykł">
+<!ENTITY ćwiczenia_audytoryjne "ćw aud">
+<!ENTITY ćwiczenia_laboratoryjne "ćw lab">
+
+<!ENTITY profesor "prof">
+<!ENTITY doktor_habilitowany "dr hab">
+<!ENTITY doktor_inżynier "dr inż">
+<!ENTITY magister "mgr">
+<!ENTITY doktor "dr">
+
+
+<!ENTITY Algorytmy "ALG">
+<!ENTITY Matematyka "MAT">
+<!ENTITY Programowanie "PROG">
+<!ENTITY Sieci_komputerowe "SKOMP">
+<!ENTITY Systemy_operacyjne "SOP">
+<!ENTITY XML "XMLLL">
+              
+]>
+
+
+
+<wyniki>
+	<przedmiot>
+		<nazwa>&Algorytmy;</nazwa>
+		<egzaminator>
+			<tytul>&doktor;</tytul>
+			<imie>Pankracy</imie>
+			<nazwisko>Bajeczny</nazwisko>
+		</egzaminator>
+		<rodzaj>&wykład;</rodzaj>
+		<ocena>&dobry;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Algorytmy;</nazwa>
+		<egzaminator>
+			<tytul>&profesor;, &doktor_habilitowany;</tytul>
+			<imie>Bianor</imie>
+			<nazwisko>Łysy</nazwisko>
+		</egzaminator>
+		<rodzaj>&ćwiczenia_audytoryjne;</rodzaj>
+		<ocena>&dostateczny_plus;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Matematyka;</nazwa>
+		<egzaminator>
+			<tytul>&doktor_habilitowany;</tytul>
+			<imie>Marcel</imie>
+			<nazwisko>Chabacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&wykład;</rodzaj>
+		<ocena>&dostateczny_plus;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Matematyka;</nazwa>
+		<egzaminator>
+			<tytul>&magister;</tytul>
+			<imie>Klet</imie>
+			<nazwisko>Zabacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&ćwiczenia_audytoryjne;</rodzaj>
+		<ocena>&dostateczny_plus;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Programowanie;</nazwa>
+		<egzaminator>
+			<tytul>&doktor;</tytul>
+			<imie>Amon</imie>
+			<nazwisko>Fabacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&wykład;</rodzaj>
+		<ocena>&dostateczny;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Programowanie;</nazwa>
+		<egzaminator>
+			<tytul>&doktor;</tytul>
+			<imie>Fidol</imie>
+			<nazwisko>Jadacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&ćwiczenia_audytoryjne;</rodzaj>
+		<ocena>&dobry;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Programowanie;</nazwa>
+		<egzaminator>
+			<tytul>&magister;</tytul>
+			<imie>Klet</imie>
+			<nazwisko>Zabacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&ćwiczenia_laboratoryjne;</rodzaj>
+		<ocena>&dobry_plus;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Sieci_komputerowe;</nazwa>
+		<egzaminator>
+			<tytul>&doktor_inżynier;</tytul>
+			<imie>Kanizjusz</imie>
+			<nazwisko>Miłosierny</nazwisko>
+		</egzaminator>
+		<rodzaj>&wykład;</rodzaj>
+		<ocena>&dobry;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Sieci_komputerowe;</nazwa>
+		<egzaminator>
+			<tytul>&doktor;</tytul>
+			<imie>Pankracy</imie>
+			<nazwisko>Bajeczny</nazwisko>
+		</egzaminator>
+		<rodzaj>&ćwiczenia_audytoryjne;</rodzaj>
+		<ocena>&dostateczny;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Systemy_operacyjne;</nazwa>
+		<egzaminator>
+			<tytul>&doktor_inżynier;</tytul>
+			<imie>Ksawery</imie>
+			<nazwisko>Melon</nazwisko>
+		</egzaminator>
+		<rodzaj>&wykład;</rodzaj>
+		<ocena>&dobry_plus;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Systemy_operacyjne;</nazwa>
+		<egzaminator>
+			<tytul>&doktor_inżynier;</tytul>
+			<imie>Ksawery</imie>
+			<nazwisko>Melon</nazwisko>
+		</egzaminator>
+		<rodzaj>&ćwiczenia_laboratoryjne;</rodzaj>
+		<ocena>&dobry_plus;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&XML;</nazwa>
+		<egzaminator>
+			<tytul>&profesor;, &doktor_habilitowany;</tytul>
+			<imie>Ramzes</imie>
+			<nazwisko>Koniczyna</nazwisko>
+		</egzaminator>
+		<rodzaj>&wykład;</rodzaj>
+		<ocena>&bardzo_dobry;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&XML;</nazwa>
+		<egzaminator>
+			<tytul>&doktor;</tytul>
+			<imie>Scholastyka</imie>
+			<nazwisko>Bławatek</nazwisko>
+		</egzaminator>
+		<rodzaj>&ćwiczenia_laboratoryjne;</rodzaj>
+		<ocena>&bardzo_dobry;</ocena>
+	</przedmiot>
+</wyniki>

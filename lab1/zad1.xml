@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osoba plec='m'>
+	<imie>Jan</imie>
+	<nazwisko>Kowalski</nazwisko>
+	<wiek>50</wiek>
+</osoba>

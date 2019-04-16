@@ -1,0 +1,7 @@
+<!ELEMENT rok_wydania (%pc;)>
+<!ELEMENT czas_trwania (%pc;)>
+<!ELEMENT autor (%pc;)>
+<!ELEMENT nr_wydania (%pc;)>
+<!ELEMENT wykonawca (%pc;)>
+<!ELEMENT wydawca (%pc;)>
+<!ELEMENT miejsc (%pc;)>

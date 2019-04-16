@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ludzie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="zad1.xsd">
+	<nauczyciele>
+		<osoba plec="K">
+			<imie>Maria</imie>
+			<nazwisko>Kowalska</nazwisko>
+		</osoba>
+	</nauczyciele>
+	<uczniowie>
+		<osoba plec="M">
+                        <imie>Jan</imie>
+                        <nazwisko>Jeż</nazwisko>
+		</osoba>
+	</uczniowie>
+	<pozostali>
+		<osoba plec="M">
+                        <imie>Marcin</imie>
+                        <nazwisko>Porost</nazwisko>
+		</osoba>
+	</pozostali>
+</ludzie>

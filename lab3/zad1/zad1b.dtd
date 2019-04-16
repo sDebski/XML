@@ -1,0 +1,3 @@
+<!ELEMENT glowny ( (parzysty, parzysty)* | (nieparzysty, (nieparzysty, nieparzysty)* ) )>
+<!ELEMENT parzysty (#PCDATA)>
+<!ELEMENT nieparzysty (#PCDATA)>

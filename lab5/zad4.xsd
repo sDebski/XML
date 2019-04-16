@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="szkola">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="nauczyciel" type="xsd:string" minOccurs="3" maxOccurs="3"/>
+				<xsd:sequence>
+					<xsd:element name="dyrektor" type="xsd:string"/>
+					<xsd:element name="wicedyrektor" type="xsd:string" minOccurs="2" maxOccurs="2"/>
+				</xsd:sequence>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
+

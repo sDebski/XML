@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<lista>
+	<osoba id="598" plec="k">
+		<imie>Nadia</imie>
+		<nazwisko>Ebacka</nazwisko>
+		<wiek>45</wiek>
+		<adres>
+			<miejsce>Olsztyn</miejsce>
+			<ulica>Mietowa</ulica>
+			<kod-pocztowy>10-214</kod-pocztowy>	
+		</adres>
+	</osoba>
+	<osoba id="754" plec="m">
+		<imie>Ksawery</imie>
+		<nazwisko>Melon</nazwisko>
+		<wiek>24</wiek>
+		<adres>
+			<miejsce>Gdynia</miejsce>
+			<ulica>Jagodowa</ulica>
+			<kod-pocztowy>80-248</kod-pocztowy>
+		</adres>
+		<opis>Prezes</opis>
+	</osoba>
+	<osoba id="328" plec="m">
+		<imie>Borys</imie>
+		<nazwisko>Pokrzyk</nazwisko>
+		<wiek>33</wiek>
+		<adres>
+			<miejsce>Olsztyn</miejsce>
+			<ulica>Morksa</ulica>
+			<kod-pocztowy>10-645</kod-pocztowy>
+		</adres>
+	</osoba>
+	<osoba id="974" plec="k">
+		<imie>Balladyna</imie>
+		<nazwisko>Malina</nazwisko>
+		<wiek>68</wiek>
+		<adres kraj="Niemcy">
+			<miejsce>Berlin</miejsce>
+			<ulica>Fryderyka</ulica>
+			<kod-pocztowy>10-331</kod-pocztowy>
+		</adres>
+	</osoba>
+	<osoba id="585" plec="k">
+		<imie>Dafroza</imie>
+		<nazwisko>Trawnik</nazwisko>
+		<wiek>41</wiek>
+		<adres>
+			<miejsce>Gdynia</miejsce>
+			<ulica>Olsztynska</ulica>
+			<kod-pocztowy>80-458</kod-pocztowy>
+		</adres>
+	</osoba>
+	<osoba id="331" plec="k">
+		<imie>Abira</imie>
+		<nazwisko>Bogata</nazwisko>
+		<wiek>27</wiek>
+		<adres>
+			<miejsce>Olsztyn</miejsce>
+			<ulica>Gdynska</ulica>
+			<kod-pocztowy>10-678</kod-pocztowy>
+		</adres>
+		<opis>Studentka i kelnerka</opis>
+	</osoba>
+	<osoba id="429" plec="m">
+		<imie>Felin</imie>
+		<nazwisko>Dziurawiec</nazwisko>
+		<wiek>30</wiek>
+		<adres>
+			<miejsce>Olsztyn</miejsce>
+			<ulica>Mala</ulica>
+			<kod-pocztowy>10-331</kod-pocztowy>
+		</adres>
+	</osoba>
+	<osoba id="160" plec="m">
+		<imie>Boromeusz</imie>
+		<nazwisko>Chmiel</nazwisko>
+		<wiek>44</wiek>
+		<adres>
+			<miejsce>Katowice</miejsce>
+			<ulica>Bulwara</ulica>
+			<kod-pocztowy>40-331</kod-pocztowy>
+		</adres>
+	</osoba>
+	<osoba id="398" plec="k">
+		<imie>Benicjusz</imie>
+		<nazwisko>Naparczywy</nazwisko>
+		<wiek>27</wiek>
+		<adres kraj="Francja">
+			<miejsce>Paryz</miejsce>
+			<ulica>Bulwara</ulica>
+			<kod-pocztowy>81-431</kod-pocztowy>
+		</adres>
+		<opis>Kucharz</opis>
+	</osoba>
+	<osoba id="593"  plec="m">
+		<imie>Długomił</imie>
+		<nazwisko>Cytrynka</nazwisko>
+		<wiek>44</wiek>
+		<adres>
+			<miejsce>Gdynia</miejsce>
+			<ulica>Bolicjusza</ulica>
+			<kod-pocztowy>81-542</kod-pocztowy>
+		</adres>
+		<opis>Informatyk, geodeta</opis>
+	</osoba>
+</lista>

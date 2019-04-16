@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE zamowienie SYSTEM "zad6.dtd">
+
+<zamowienie numer_zamowienia="32">
+	<adres termin_dostarczenia="10.05.2019" kraj="Polska">
+		<miejsce>Domek nad jeziorem</miejsce>
+		<ulica>Złota</ulica>
+		<kod_pocztowy>83-330</kod_pocztowy>
+	</adres>	
+	<produkty>
+		<artykuly>
+			<artykul id="p54">
+				<film>
+					<tytul>Lord of the Rings</tytul>
+					<rezyser>Peter Jackson</rezyser>
+					<rok_wydania>2000</rok_wydania>
+					<czas_trwania>140 minut</czas_trwania>
+				</film>
+			</artykul>
+			<artykul id="u23">
+				<ksiazka>
+					<tytul>Wiedźmin</tytul>
+					<autor>Andrzej Sapkowski</autor>
+					<rok_wydania>2003</rok_wydania>
+					<nr_wydania>14526</nr_wydania>
+				</ksiazka>
+			</artykul>
+		</artykuly>
+	</produkty>
+</zamowienie>

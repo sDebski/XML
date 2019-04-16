@@ -1,0 +1,5 @@
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT rezyser (#PCDATA)>
+<!ELEMENT rok_wydania (#PCDATA)>
+<!ELEMENT czas_trwania (#PCDATA)>

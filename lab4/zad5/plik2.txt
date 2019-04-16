@@ -1,0 +1,8 @@
+
+                                <ksiazka>
+                                        <tytul>Wiedźmin</tytul>
+                                        <autor>Andrzej Sapkowski</autor>
+                                        <rok_wydania>2003</rok_wydania>
+                                        <nr_wydania>14526</nr_wydania>
+                                </ksiazka>
+
