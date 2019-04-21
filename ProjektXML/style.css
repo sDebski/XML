@@ -1,23 +1,44 @@
 ﻿
-trenerzy, klienci, zajecia, sale, sprzety {
+silownia {
+    background-image: url('silownia.jpg');
+}
+trenerzy, klienci, zajecia, sale, sprzety{
     margin: 5px;
-    display: block;
+    display: inline-block;
     border: solid 3px;
+    background-color:aliceblue;
+}
+
+trenerzy:hover, klienci:hover, zajecia:hover, sale:hover, sprzety:hover {
+    background-color:aquamarine;
+
 }
  
-
+sprzet:hover, zajecie:hover, sala:hover{
+    background-color:darksalmon;
+}
 trener, klient, sala, zajecie, sprzet  {
     background-color: grey;
-    display: inline-block;
+    display: block;
     border: solid 3px;
     margin: 15px;
 }
 
 wlasciciel, adres_silowni {
-    background-color: grey;
+    background-color:bisque;
     display: block;
     border: solid 3px;
     margin: 15px;
+}
+
+adres_silowni:hover, wlasciciel:hover {
+    background-color: burlywood;
+}
+
+
+adres_silowni::before{
+    content: "Adres siłowni: ";
+    font-size: large;
 }
 
 wlasciciel::before{
@@ -46,14 +67,45 @@ sprzety::before {
     font-size: large;
 }
 
+nazwa::before {
+    content: "Nazwa: ";
+}
+
+czas_trwania::before {
+    content: "Czas trwania: ";
+}
+
+czas_trwania[jednostka='minuty']:after {
+    content: " min";
+
+}
+
+powierzchnia::before {
+    content: "Powierzchnia: ";
+}
 
 
-adres, od_kiedy, do_kiedy, opis, pesel{
+ilosc::before {
+    content: "Ilosc: ";
+}
+
+powierzchnia[jednostka='m2']::after {
+    content: " m2 ";
+}
+
+
+adres, od_kiedy, do_kiedy, opis, pesel, dzien_tygodnia,ilosc, firma, powierzchnia{
     display: block;
 }
 
 adres::before{
     content: "Adres: ";
+    color:red;
+}
+
+firma::before{
+    content: "Firma: ";
+
 }
 
 grupa[numer='1'] > osoba {
@@ -69,25 +121,30 @@ grupa[numer='3'] > osoba {
 }
 
 
-nr_albumu {
-    display: block;
-    font-size: small;
+trener[plec='k']:hover {
+    background-color:coral;
 }
 
-    nr_albumu::before {
-        content: "Nr albumu: ";
-        font-size: small;
-    }
-
-osoba[plec='K']:hover {
-    background-color: pink;
+trener[plec='m']:hover {
+    background-color: lightseagreen;
 }
 
-osoba[plec='M']:hover {
-    background-color: blue;
+
+klient[plec='k']:hover {
+    background-color:cornflowerblue;
 }
 
-nazwisko {
+klient[plec='m']:hover {
+    background-color:brown;
+}
+
+klient[plec='b']:hover {
+    background-color:blueviolet;
+}
+
+
+
+imie, nazwisko, nazwa {
     font-family: "Times New Roman", serif;
     font-size: large;
 }

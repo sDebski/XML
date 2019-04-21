@@ -10,7 +10,6 @@
   <wlasciciel>
     <imie>Oleg</imie>
     <nazwisko>Olegowic</nazwisko>
-    <pesel>75101002234</pesel>
     <adres>
       <miasto>Warszawa</miasto>
       <ulica>ul. Dworska</ulica>
@@ -207,7 +206,8 @@
       <nazwa>Hantle</nazwa>
       <firma>Szultka</firma>
       <ilosc>40</ilosc>
-      <opis>Hantle z przedzialu ciezarowego 2-20kg, 2 hantle na kazda wage, roznica = 2kg</opis> 
+      <opis>Hantle z przedzialu ciezarowego 2-20kg</opis>
+      <opis>2 hantle na kazda wage, roznica = 2kg</opis>
     </sprzet>
     <sprzet>
       <nazwa>Sztanga</nazwa>
@@ -231,7 +231,8 @@
       <nazwa>Talerze ciężarowe</nazwa>
       <firma>Szultka</firma>
       <ilosc>30</ilosc>
-      <opis>Talerze ciężarowe, przedział wagowy 5-25kg, roznica = 5kg, kazdego 6 sztuk</opis>
+      <opis>Talerze ciężarowe, przedział wagowy 5-25kg</opis>
+      <opis> roznica = 5kg, kazdego 6 sztuk</opis>
     </sprzet>
   </sprzety>
 </silownia>
