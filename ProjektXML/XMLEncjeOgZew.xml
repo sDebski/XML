@@ -1,11 +1,88 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE silownia SYSTEM "DTD.dtd">
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE silownia [
+
+  <!ENTITY  gda "Gdansk">
+  <!ENTITY  gdy "Gdynia">
+  <!ENTITY  a "Anna">
+  <!ENTITY  ulica "ul.">
+  <!ENTITY  n "Natalia">
+  <!ENTITY  z "Zajęcia">
+
+
+  
+  <!ELEMENT silownia (adres_silowni, wlasciciel, trenerzy, klienci, sale, zajecia, sprzety)>
+  <!ATTLIST silownia nazwa NMTOKENS #REQUIRED>
+
+  <!ELEMENT adres_silowni (miasto, ulica?, numer, kod, nic)>
+  <!ELEMENT wlasciciel (imie, nazwisko, adres)>
+
+  <!ELEMENT adres (miasto, ulica?, numer, kod)>
+
+  <!ELEMENT trenerzy ((trener)*)>
+  <!ELEMENT klienci ((klient)*)>
+  <!ELEMENT sale ((sala)*)>
+  <!ELEMENT zajecia ((zajecie)*)>
+  <!ELEMENT sprzety ((sprzet)*)>
+
+
+  <!ELEMENT trener ((imie)+, nazwisko, pesel, adres)>
+  <!ATTLIST trener plec (k|m) #REQUIRED >
+  <!ATTLIST trener id ID #REQUIRED >
+
+  <!ELEMENT klient (imie, nazwisko, pesel, waznosc_karnetu, adres)>
+  <!ELEMENT waznosc_karnetu (od_kiedy, do_kiedy)>
+
+  <!ELEMENT od_kiedy (#PCDATA)>
+  <!ELEMENT do_kiedy (#PCDATA)>
+
+  <!ATTLIST klient id ID #REQUIRED>
+  <!ATTLIST klient plec (k|m|b) "b">
+
+  <!ELEMENT sala (nazwa, powierzchnia)>
+  <!ATTLIST sala id ID #REQUIRED>
+
+  <!ATTLIST powierzchnia jednostka CDATA #FIXED "m2">
+
+  <!ELEMENT zajecie (czas_trwania, dzien_tygodnia+, godzina, opis)>
+  <!ATTLIST zajecie idTrener IDREF #REQUIRED>
+  <!ATTLIST zajecie idSala IDREF #REQUIRED>
+
+  <!ATTLIST czas_trwania jednostka NMTOKEN #FIXED "minuty">
+
+  <!ELEMENT sprzet (nazwa, firma, ilosc, opis*)>
+
+
+
+  <!ELEMENT miasto (#PCDATA)>
+  <!ELEMENT ulica (#PCDATA)>
+  <!ELEMENT kod (#PCDATA)>
+  <!ELEMENT imie (#PCDATA)>
+  <!ELEMENT nazwisko (#PCDATA)>
+  <!ELEMENT pesel (#PCDATA)>
+  <!ELEMENT numer (#PCDATA)>
+  <!ELEMENT nazwa (#PCDATA)>
+  <!ELEMENT firma (#PCDATA)>
+  <!ELEMENT ilosc (#PCDATA)>
+  <!ELEMENT dzien_tygodnia (#PCDATA)>
+  <!ELEMENT godzina (#PCDATA)>
+  <!ELEMENT czas_trwania (#PCDATA)>
+  <!ELEMENT opis (#PCDATA)>
+  <!ELEMENT powierzchnia (#PCDATA)>
+
+
+
+  <!ELEMENT nic EMPTY>
+
+
+
+
+]>
 
 <?xml-stylesheet type="text/css" href="style.css" ?>
-<silownia nazwa="Sport Connect"> 
+<silownia nazwa="Sport Connect">
   <adres_silowni>
-    <miasto>Gdansk</miasto>
-    <ulica>ul. Jagielonska</ulica>
+    <miasto>&gda;</miasto>
+    <ulica>&ulica; Jagielonska</ulica>
     <numer>37</numer>
     <kod>83-330</kod>
     <nic/>
@@ -15,20 +92,20 @@
     <nazwisko>Olegowic</nazwisko>
     <adres>
       <miasto>Warszawa</miasto>
-      <ulica>ul. Dworska</ulica>
+      <ulica>&ulica; Dworska</ulica>
       <numer>1</numer>
       <kod>50-512</kod>
     </adres>
   </wlasciciel>
- <trenerzy>
+  <trenerzy>
     <trener plec="m" id="t1">
       <imie>Adam</imie>
       <imie>Bartosz</imie>
       <nazwisko>Adamowicz</nazwisko>
       <pesel>89101002234</pesel>
       <adres>
-        <miasto>Gdansk</miasto>
-        <ulica>ul. Slowackiego</ulica>
+        <miasto>&gda;</miasto>
+        <ulica>&ulica; Slowackiego</ulica>
         <numer>10</numer>
         <kod>10-550</kod>
       </adres>
@@ -38,19 +115,19 @@
       <nazwisko>Marianowicz</nazwisko>
       <pesel>85101002534</pesel>
       <adres>
-        <miasto>Gdansk</miasto>
-        <ulica>ul. Slowackiego</ulica>
+        <miasto>&gda;</miasto>
+        <ulica>&ulica; Slowackiego</ulica>
         <numer>15</numer>
         <kod>10-550</kod>
       </adres>
     </trener>
     <trener plec="k" id="t3">
-      <imie>Anna</imie>
+      <imie>&a;</imie>
       <nazwisko>Aniowicz</nazwisko>
       <pesel>93040512345</pesel>
       <adres>
-        <miasto>Gdynia</miasto>
-        <ulica>ul. Zawiszy</ulica>
+        <miasto>&gdy;</miasto>
+        <ulica>&ulica; Zawiszy</ulica>
         <numer>54</numer>
         <kod>15-850</kod>
       </adres>
@@ -60,16 +137,16 @@
       <nazwisko>Olowicz</nazwisko>
       <pesel>90020312345</pesel>
       <adres>
-        <miasto>Gdansk</miasto>
-        <ulica>ul. Bora</ulica>
+        <miasto>&gda;</miasto>
+        <ulica>&ulica; Bora</ulica>
         <numer>80</numer>
         <kod>10-570</kod>
       </adres>
     </trener>
-  </trenerzy> 
+  </trenerzy>
   <klienci>
     <klient id="k1" plec="b">
-      <imie>Natalia</imie>
+      <imie>&n;</imie>
       <nazwisko>Natalowicz</nazwisko>
       <pesel>90020312395</pesel>
       <waznosc_karnetu>
@@ -77,11 +154,11 @@
         <do_kiedy>2019-05-06</do_kiedy>
       </waznosc_karnetu>
       <adres>
-        <miasto>Gdansk</miasto>
-        <ulica>ul. Bora</ulica>
+        <miasto>&gda;</miasto>
+        <ulica>&ulica; Bora</ulica>
         <numer>70</numer>
         <kod>10-570</kod>
-      </adres> 
+      </adres>
     </klient>
     <klient id="k2" plec="b">
       <imie>Marta</imie>
@@ -92,8 +169,8 @@
         <do_kiedy>2019-05-05</do_kiedy>
       </waznosc_karnetu>
       <adres>
-        <miasto>Gdansk</miasto>
-        <ulica>ul. Bora</ulica>
+        <miasto>&gda;</miasto>
+        <ulica>&ulica; Bora</ulica>
         <numer>90</numer>
         <kod>10-570</kod>
       </adres>
@@ -108,7 +185,7 @@
       </waznosc_karnetu>
       <adres>
         <miasto>Sopot</miasto>
-        <ulica>ul. Olewna</ulica>
+        <ulica>&ulica; Olewna</ulica>
         <numer>5</numer>
         <kod>20-202</kod>
       </adres>
@@ -122,8 +199,8 @@
         <do_kiedy>2019-07-05</do_kiedy>
       </waznosc_karnetu>
       <adres>
-        <miasto>Gdynia</miasto>
-        <ulica>ul. Trubadurow</ulica>
+        <miasto>&gdy;</miasto>
+        <ulica>&ulica; Trubadurow</ulica>
         <numer>136</numer>
         <kod>25-554</kod>
       </adres>
@@ -137,8 +214,8 @@
         <do_kiedy>2019-05-05</do_kiedy>
       </waznosc_karnetu>
       <adres>
-        <miasto>Gdansk</miasto>
-        <ulica>ul. Miodowa</ulica>
+        <miasto>&gda;</miasto>
+        <ulica>&ulica; Miodowa</ulica>
         <numer>50</numer>
         <kod>10-560</kod>
       </adres>
@@ -152,8 +229,8 @@
         <do_kiedy>2019-05-05</do_kiedy>
       </waznosc_karnetu>
       <adres>
-        <miasto>Gdansk</miasto>
-        <ulica>ul. Bora</ulica>
+        <miasto>&gda;</miasto>
+        <ulica>&ulica; Bora</ulica>
         <numer>80</numer>
         <kod>10-570</kod>
       </adres>
@@ -182,28 +259,28 @@
       <czas_trwania jednostka="minuty">120</czas_trwania>
       <dzien_tygodnia>Czwartek</dzien_tygodnia>
       <godzina>18:00</godzina>
-      <opis>Zajecia przygotowujące do Trojboju silowego</opis>      
+      <opis>&z; przygotowujące do Trojboju silowego</opis>
     </zajecie>
     <zajecie idTrener="t2" idSala="s1">
       <czas_trwania jednostka="minuty">120</czas_trwania>
       <dzien_tygodnia>Środa</dzien_tygodnia>
       <godzina>16:00</godzina>
       <opis>
-        Zajecia Crosfitowe wzmacniające motorykę
+        &z; Crosfitowe wzmacniające motorykę
       </opis>
     </zajecie>
     <zajecie idTrener="t3" idSala="s3">
       <czas_trwania jednostka="minuty">60</czas_trwania>
       <dzien_tygodnia>Piątek</dzien_tygodnia>
       <godzina>19:00</godzina>
-      <opis>Zajecia z Zumby</opis>
+      <opis>&z; z Zumby</opis>
     </zajecie>
     <zajecie idTrener="t4" idSala="s4">
       <czas_trwania jednostka="minuty">60</czas_trwania>
       <dzien_tygodnia>Piątek</dzien_tygodnia>
       <godzina>20:00</godzina>
-      <opis>Zajecia na rowerkach</opis>
-    </zajecie>    
+      <opis>&z; na rowerkach</opis>
+    </zajecie>
   </zajecia>
   <sprzety>
     <sprzet>

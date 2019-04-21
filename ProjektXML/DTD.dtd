@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!ENTITY % cd "CDATA">
+<!ENTITY % r "#REQUIRED">
+<!ENTITY % pc "#PCDATA">
+<!ENTITY % a "adres">
+<!ENTITY % p "pesel">
+<!ENTITY % i "imie">
+<!ENTITY % n "nazwisko">
+<!ENTITY % k "klient">
+<!ENTITY % t "trener">
+<!ENTITY % sa "sala">
+<!ENTITY % sp "sprzet">
+<!ENTITY % z "zajecie">
+<!ENTITY % pl "plec">
+
+
+<!ELEMENT silownia (adres_silowni, wlasciciel, trenerzy, klienci, sale, zajecia, sprzety)>
+<!ATTLIST silownia nazwa NMTOKENS %r;>
+
+<!ELEMENT adres_silowni (miasto, ulica?, numer, kod, nic)>
+<!ELEMENT wlasciciel (%i;, %n;, %a;)>
+
+<!ELEMENT %a;(miasto, ulica?, numer, kod)>
+
+<!ELEMENT trenerzy ((%t;)*)>
+<!ELEMENT klienci ((%k;)*)>
+<!ELEMENT sale ((%sa;)*)>
+<!ELEMENT zajecia ((%z;)*)>
+<!ELEMENT sprzety ((%sp;)*)>
+
+
+<!ELEMENT %t; ((%i;)+, %n;, %p;, %a;)>
+<!ATTLIST %t; %pl; (k|m) %r; >
+<!ATTLIST %t; id ID %r; >
+
+<!ELEMENT %k; (%i;, %n;, %p;, waznosc_karnetu, %a;)>
+<!ELEMENT waznosc_karnetu (od_kiedy, do_kiedy)>
+
+<!ELEMENT od_kiedy (%pc;)>
+<!ELEMENT do_kiedy (%pc;)>
+
+<!ATTLIST %k; id ID %r;>
+<!ATTLIST %k; %pl; (k|m|b) "b">
+
+<!ELEMENT %sa; (nazwa, powierzchnia)>
+<!ATTLIST sala id ID %r;>
+
+<!ATTLIST powierzchnia jednostka %cd; #FIXED "m2">
+
+<!ELEMENT %z; (czas_trwania, dzien_tygodnia+, godzina, opis)>
+<!ATTLIST %z; idTrener IDREF %r;>
+<!ATTLIST %z; idSala IDREF %r;>
+
+<!ATTLIST czas_trwania jednostka NMTOKEN #FIXED "minuty">
+
+<!ELEMENT %sp; (nazwa, firma, ilosc, opis*)>
+
+
+
+<!ELEMENT miasto (%pc;)>
+<!ELEMENT ulica (%pc;)>
+<!ELEMENT kod (%pc;)>
+<!ELEMENT imie (%pc;)>
+<!ELEMENT nazwisko (%pc;)>
+<!ELEMENT pesel (%pc;)>
+<!ELEMENT numer (%pc;)>
+<!ELEMENT nazwa (%pc;)>
+<!ELEMENT firma (%pc;)>
+<!ELEMENT ilosc (%pc;)>
+<!ELEMENT dzien_tygodnia (%pc;)>
+<!ELEMENT godzina (%pc;)>
+<!ELEMENT czas_trwania (%pc;)>
+<!ELEMENT opis (%pc;)>
+<!ELEMENT powierzchnia (%pc;)>
+
+
+
+<!ELEMENT nic EMPTY>
