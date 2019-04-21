@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<silownia nazwa="Sport Connect"> 
+  <adres_silowni>
+    <miasto>Gdansk</miasto>
+    <ulica>ul. Jagielonska</ulica>
+    <numer>37</numer>
+    <kod>83-330</kod>
+  </adres_silowni>
+  <wlasciciel>
+    <imie>Oleg</imie>
+    <nazwisko>Olegowic</nazwisko>
+    <pesel>75101002234</pesel>
+    <adres>
+      <miasto>Warszawa</miasto>
+      <ulica>ul. Dworska</ulica>
+      <numer>1</numer>
+      <kod>50-512</kod>
+    </adres>
+  </wlasciciel>
+ <trenerzy>
+    <trener plec="m" ID="t1">
+      <imie>Adam</imie>
+      <nazwisko>Adamowicz</nazwisko>
+      <pesel>89101002234</pesel>
+      <adres>
+        <miasto>Gdansk</miasto>
+        <ulica>ul. Slowackiego</ulica>
+        <numer>10</numer>
+        <kod>10-550</kod>
+      </adres>
+    </trener>
+    <trener plec="m" ID="t2">
+      <imie>Marian</imie>
+      <nazwisko>Marianowicz</nazwisko>
+      <pesel>85101002534</pesel>
+      <adres>
+        <miasto>Gdansk</miasto>
+        <ulica>ul. Slowackiego</ulica>
+        <numer>15</numer>
+        <kod>10-550</kod>
+      </adres>
+    </trener>
+    <trener plec="k" ID="t3">
+      <imie>Anna</imie>
+      <nazwisko>Aniowicz</nazwisko>
+      <pesel>93040512345</pesel>
+      <adres>
+        <miasto>Gdynia</miasto>
+        <ulica>ul. Zawiszy</ulica>
+        <numer>54</numer>
+        <kod>15-850</kod>
+      </adres>
+    </trener>
+    <trener plec="k" ID="t4">
+      <imie>Aleksandra</imie>
+      <nazwisko>Olowicz</nazwisko>
+      <pesel>90020312345</pesel>
+      <adres>
+        <miasto>Gdansk</miasto>
+        <ulica>ul. Bora</ulica>
+        <numer>80</numer>
+        <kod>10-570</kod>
+      </adres>
+    </trener>
+  </trenerzy> 
+  <klienci>
+    <klient ID="k1" plec="b">
+      <imie>Natalia</imie>
+      <nazwisko>Natalowicz</nazwisko>
+      <pesel>90020312395</pesel>
+      <waznosc_karnetu>
+        <od_kiedy>2019-03-10</od_kiedy>
+        <do_kiedy>2019-05-06</do_kiedy>
+      </waznosc_karnetu>
+      <adres>
+        <miasto>Gdansk</miasto>
+        <ulica>ul. Bora</ulica>
+        <numer>70</numer>
+        <kod>10-570</kod>
+      </adres> 
+    </klient>
+    <klient ID="k2" plec="b">
+      <imie>Marta</imie>
+      <nazwisko>Martowicz</nazwisko>
+      <pesel>93020382345</pesel>
+      <waznosc_karnetu>
+        <od_kiedy>2019-02-10</od_kiedy>
+        <do_kiedy>2019-05-05</do_kiedy>
+      </waznosc_karnetu>
+      <adres>
+        <miasto>Gdansk</miasto>
+        <ulica>ul. Bora</ulica>
+        <numer>90</numer>
+        <kod>10-570</kod>
+      </adres>
+    </klient>
+    <klient ID="k3" plec="k">
+      <imie>Nadia</imie>
+      <nazwisko>Nadowicz</nazwisko>
+      <pesel>98020312345</pesel>
+      <waznosc_karnetu>
+        <od_kiedy>2019-04-21</od_kiedy>
+        <do_kiedy>2019-06-13</do_kiedy>
+      </waznosc_karnetu>
+      <adres>
+        <miasto>Sopot</miasto>
+        <ulica>ul. Olewna</ulica>
+        <numer>5</numer>
+        <kod>20-202</kod>
+      </adres>
+    </klient>
+    <klient ID="k4" plec="m">
+      <imie>Witold</imie>
+      <nazwisko>Witoldowicz</nazwisko>
+      <pesel>83122112345</pesel>
+      <waznosc_karnetu>
+        <od_kiedy>2019-04-10</od_kiedy>
+        <do_kiedy>2019-07-05</do_kiedy>
+      </waznosc_karnetu>
+      <adres>
+        <miasto>Gdynia</miasto>
+        <ulica>ul. Trubadurow</ulica>
+        <numer>136</numer>
+        <kod>25-554</kod>
+      </adres>
+    </klient>
+    <klient ID="k5" plec="m">
+      <imie>Marcin</imie>
+      <nazwisko>Marcinowicz</nazwisko>
+      <pesel>79091912345</pesel>
+      <waznosc_karnetu>
+        <od_kiedy>2019-04-15</od_kiedy>
+        <do_kiedy>2019-05-05</do_kiedy>
+      </waznosc_karnetu>
+      <adres>
+        <miasto>Gdansk</miasto>
+        <ulica>ul. Miodowa</ulica>
+        <numer>50</numer>
+        <kod>10-560</kod>
+      </adres>
+    </klient>
+    <klient ID="k6" plec="b">
+      <imie>Aleksandra</imie>
+      <nazwisko>Olowicz</nazwisko>
+      <pesel>90020312345</pesel>
+      <waznosc_karnetu>
+        <od_kiedy>2019-02-10</od_kiedy>
+        <do_kiedy>2019-05-05</do_kiedy>
+      </waznosc_karnetu>
+      <adres>
+        <miasto>Gdansk</miasto>
+        <ulica>ul. Bora</ulica>
+        <numer>80</numer>
+        <kod>10-570</kod>
+      </adres>
+    </klient>
+  </klienci>
+  <sale>
+    <sala ID="s1">
+      <nazwa>Sala Crossfit</nazwa>
+      <powierzchnia jednostka="m2">120</powierzchnia>
+    </sala>
+    <sala ID="s2">
+      <nazwa>Sala Ciezarowa</nazwa>
+      <powierzchnia jednostka="m2">200</powierzchnia>
+    </sala>
+    <sala ID="s3">
+      <nazwa>Sala Zajeciowa 1</nazwa>
+      <powierzchnia jednostka="m2">100</powierzchnia>
+    </sala>
+    <sala ID="s4">
+      <nazwa>Sala Zajeciowa 2</nazwa>
+      <powierzchnia jednostka="m2">80</powierzchnia>
+    </sala>
+  </sale>
+  <zajecia>
+    <zajecie IDTrener="t1" IDSala="s2">
+      <czas_trwania jednostka="minuty">120</czas_trwania>
+      <dzien_tygodnia>Czwartek</dzien_tygodnia>
+      <godzina>18:00</godzina>
+      <opis>Zajecia przygotowujące do Trojboju silowego</opis>      
+    </zajecie>
+    <zajecie IDTrener="t2" IDSala="s1">
+      <czas_trwania jednostka="minuty">120</czas_trwania>
+      <dzien_tygodnia>Środa</dzien_tygodnia>
+      <godzina>16:00</godzina>
+      <opis>
+        Zajecia Crosfitowe wzmacniające motorykę
+      </opis>
+    </zajecie>
+    <zajecie IDTrener="t3" IDSala="s3">
+      <czas_trwania jednostka="minuty">60</czas_trwania>
+      <dzien_tygodnia>Piątek</dzien_tygodnia>
+      <godzina>19:00</godzina>
+      <opis>Zajecia z Zumby</opis>
+    </zajecie>
+    <zajecie IDTrener="t4" IDSala="s4">
+      <czas_trwania jednostka="minuty">60</czas_trwania>
+      <dzien_tygodnia>Piątek</dzien_tygodnia>
+      <godzina>20:00</godzina>
+      <opis>Zajecia na rowerkach</opis>
+    </zajecie>    
+  </zajecia>
+  <sprzety>
+    <sprzet>
+      <nazwa>Hantle</nazwa>
+      <firma>Szultka</firma>
+      <ilosc>40</ilosc>
+      <opis>Hantle z przedzialu ciezarowego 2-20kg, 2 hantle na kazda wage, roznica = 2kg</opis> 
+    </sprzet>
+    <sprzet>
+      <nazwa>Sztanga</nazwa>
+      <firma>Szultka</firma>
+      <ilosc>4</ilosc>
+      <opis>Sztangi o dlugosci 1.5m i wadze 20kg</opis>
+    </sprzet>
+    <sprzet>
+      <nazwa>Ławeczka płaska</nazwa>
+      <firma>Szultka</firma>
+      <ilosc>4</ilosc>
+      <opis>Ławeczka płaska, kolor obicia zielony</opis>
+    </sprzet>
+    <sprzet>
+      <nazwa>ławeczka płaska regulowana</nazwa>
+      <firma>Szultka</firma>
+      <ilosc>2</ilosc>
+      <opis>Ławeczka płaska, kolor obicia czerwony, regulowowana</opis>
+    </sprzet>
+    <sprzet>
+      <nazwa>Talerze ciężarowe</nazwa>
+      <firma>Szultka</firma>
+      <ilosc>30</ilosc>
+      <opis>Talerze ciężarowe, przedział wagowy 5-25kg, roznica = 5kg, kazdego 6 sztuk</opis>
+    </sprzet>
+  </sprzety>
+</silownia>

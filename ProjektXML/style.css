@@ -1,0 +1,101 @@
+﻿
+trenerzy, klienci, zajecia, sale, sprzety {
+    margin: 5px;
+    display: block;
+    border: solid 3px;
+}
+ 
+
+trener, klient, sala, zajecie, sprzet  {
+    background-color: grey;
+    display: inline-block;
+    border: solid 3px;
+    margin: 15px;
+}
+
+wlasciciel, adres_silowni {
+    background-color: grey;
+    display: block;
+    border: solid 3px;
+    margin: 15px;
+}
+
+wlasciciel::before{
+    content: "Właściciel siłowni: ";
+    font-size: large;
+}
+
+trenerzy::before {
+    content: "Trenerzy: ";
+    font-size: large;
+}
+klienci::before {
+    content: "Klienci: ";
+    font-size: large;
+}
+zajecia::before {
+    content: "Zajecia: ";
+    font-size: large;
+}
+sale::before {
+    content: "Sale: ";
+    font-size: large;
+}
+sprzety::before {
+    content: "Sprzety: ";
+    font-size: large;
+}
+
+
+
+adres, od_kiedy, do_kiedy, opis, pesel{
+    display: block;
+}
+
+adres::before{
+    content: "Adres: ";
+}
+
+grupa[numer='1'] > osoba {
+    background-color: green;
+}
+
+grupa[numer='2'] > osoba {
+    background-color: yellow;
+}
+
+grupa[numer='3'] > osoba {
+    background-color: red;
+}
+
+
+nr_albumu {
+    display: block;
+    font-size: small;
+}
+
+    nr_albumu::before {
+        content: "Nr albumu: ";
+        font-size: small;
+    }
+
+osoba[plec='K']:hover {
+    background-color: pink;
+}
+
+osoba[plec='M']:hover {
+    background-color: blue;
+}
+
+nazwisko {
+    font-family: "Times New Roman", serif;
+    font-size: large;
+}
+
+trener[plec='k'] > nazwisko:after, klient[plec='k'] > nazwisko:after {
+    content: url('oznaczenieKobieta.png');
+}
+
+trener[plec='m'] > nazwisko:after, klient[plec='m'] > nazwisko:after {
+    content: url('oznaczenieMezczyzna.png');
+}
