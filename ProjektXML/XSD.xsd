@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="silownia">
+		<xsd:complexType>
+			<xsd:sequence>
+        <xsd:element name="adres_silowni" type="adres_silowni_type"/>
+        <xsd:element name="wlasciciel" type="wlasciciel_type"/>
+				<xsd:element name="trenerzy" type="trenerzy_type" />
+				<xsd:element name="klienci" type="klienci_type"/>
+				<xsd:element name="sale" type="sale_type"/>
+				<xsd:element name="zajecia" type="zajecia_type"/>
+				<xsd:element name="sprzety" type="sprzety_type"/>
+			</xsd:sequence>
+      <xsd:attribute name="nazwa" type="xsd:string"/>
+		</xsd:complexType>
+  
+    <xsd:key name="id_trener">
+      <xsd:selector xpath="trenerzy/trener"/>
+      <xsd:field xpath="@id"/>
+    </xsd:key>
+  
+    <xsd:key name="id_klient">
+      <xsd:selector xpath="klieci/klient"/>
+      <xsd:field xpath="@id"/>
+    </xsd:key>
+    
+    <xsd:key name="id_sala">
+      <xsd:selector xpath="sale/sala"/>
+      <xsd:field xpath="@id"/>
+    </xsd:key>
+    
+    <xsd:keyref name="zajecie_id_trener" refer="id_trener">
+      <xsd:selector xpath="zajecia/zajecie"/>
+      <xsd:field xpath="@idTrener"/>
+    </xsd:keyref>
+    
+    <xsd:keyref name="zajecie_id_sala" refer="id_sala">
+      <xsd:selector xpath="zajecia/zajecie"/>
+      <xsd:field xpath="@idSala"/>
+    </xsd:keyref>
+    
+    <xsd:unique name="zajecie_klucz_zlozony">
+      <xsd:selector xpath="zajecia/zajecie"/>
+      <xsd:field xpath="@zajecie_id_sala"/>
+      <xsd:field xpath="@zajecie_id_trener"/>
+    </xsd:unique>
+    
+  
+  
+	</xsd:element>
+
+
+
+  <xsd:complexType name="adres_type">
+    <xsd:sequence>
+      <xsd:element name="miasto" type="xsd:string"/>
+      <xsd:element name="ulica" type="ulica_type"/>
+      <xsd:element name="numer" type="xsd:positiveInteger"/>
+      <xsd:element name="kod" type="kod_type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="ulica_type">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern
+          value="[u][l]\.[ ][A-Z][a-z]*" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="kod_type">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern 
+        value="[0-9]{2}[-][0-9]{3}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+
+  <xsd:complexType name="adres_silowni_type">
+    <xsd:complexContent>
+      <xsd:extension base="adres_type">
+        <xsd:sequence>
+          <xsd:element name="nic">
+            <xsd:complexType>
+              <xsd:attribute name="nic" type="xsd:normalizedString"/>
+            </xsd:complexType>
+          </xsd:element>
+          </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+
+  <xsd:complexType name="wlasciciel_type">
+    <xsd:sequence>
+      <xsd:element name="imie" type="capitalize_type"/>
+      <xsd:element name="nazwisko" type="capitalize_type"/>
+      <xsd:element name="adres" type="adres_type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="capitalize_type">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[A-Z][a-z]+"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+ <xsd:complexType name="trenerzy_type">
+   <xsd:sequence>
+     <xsd:element name="trener" type="trener_type" minOccurs="1" maxOccurs="10"/>
+   </xsd:sequence>
+ </xsd:complexType>
+
+<xsd:complexType name="trener_type">
+  <xsd:sequence>
+      <xsd:element name="imie" type="capitalize_type" minOccurs="0" maxOccurs="5"/>
+      <xsd:element name="nazwisko" type="capitalize_type"/>
+      <xsd:element name="pesel" type="pesel_type" />
+      <xsd:element name="adres" type="adres_type"/>
+  </xsd:sequence>
+  <xsd:attribute name="id" use="required"  type="xsd:string"/>
+  <xsd:attribute name="plec" type="plec_trener_type" use="required" />
+</xsd:complexType>
+
+  <xsd:simpleType name="plec_trener_type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="m"/>
+      <xsd:enumeration value="k"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="pesel_type">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9]{11}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+    <xsd:simpleType name="plec_klient_type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="m"/>
+      <xsd:enumeration value="k"/>
+      <xsd:enumeration value="b"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  
+   <xsd:complexType name="klienci_type">
+   <xsd:sequence>
+     <xsd:element name="klient" type="klient_type" minOccurs="1" maxOccurs="unbounded"/>
+   </xsd:sequence>
+ </xsd:complexType>
+
+<xsd:complexType name="klient_type">
+  <xsd:sequence>
+      <xsd:element name="imie" type="capitalize_type"/>
+      <xsd:element name="nazwisko" type="capitalize_type"/>
+      <xsd:element name="pesel" type="pesel_type" />
+      <xsd:element name="waznosc_karnetu" type="karnet_type"/>
+      <xsd:element name="adres" type="adres_type"/>
+  </xsd:sequence>
+  <xsd:attribute name="id" use="required"  type="xsd:string"/>
+  <xsd:attribute name="plec" type="plec_klient_type" use="required" />
+</xsd:complexType>
+
+
+  
+  <xsd:complexType name="karnet_type">
+    <xsd:choice>
+      <xsd:sequence>
+        <xsd:element name="od_kiedy" type="xsd:date"/>
+        <xsd:element name="do_kiedy" type="xsd:date"/>
+      </xsd:sequence>
+      <xsd:sequence>
+        <xsd:element name="opisowa_dlugosc_karnetu" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:choice>
+  </xsd:complexType>
+  
+   <xsd:complexType name="sale_type">
+   <xsd:sequence>
+     <xsd:element name="sala" type="sala_type" minOccurs="1" maxOccurs="unbounded"/>
+   </xsd:sequence>
+ </xsd:complexType>
+
+<xsd:complexType name="sala_type">
+  <xsd:all>
+      <xsd:element name="nazwa" type="xsd:string"/>
+      <xsd:element name="powierzchnia" type="extended_powierzchnia"/>
+  </xsd:all>
+  <xsd:attribute name="id" use="required"  type="xsd:string"/>
+</xsd:complexType>
+  
+  <xsd:complexType name="extended_powierzchnia">
+    <xsd:simpleContent>
+      <xsd:extension base="powierzchnia_type">
+        <xsd:attribute name="jednostka" type="xsd:string" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  
+  <xsd:simpleType name="powierzchnia_type">
+    <xsd:restriction base="xsd:long">
+      <xsd:minExclusive value="10"/>
+      <xsd:maxExclusive value="1000000"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  
+  
+     <xsd:complexType name="zajecia_type">
+   <xsd:sequence>
+     <xsd:element name="zajecie" type="zajecie_type" minOccurs="1" maxOccurs="unbounded"/>
+   </xsd:sequence>
+ </xsd:complexType>
+
+<xsd:complexType name="zajecie_type">
+  <xsd:sequence>
+      <xsd:element name="czas_trwania" type="extended_czas_trwania"/>
+      <xsd:element name="dzien_tygodnia" type="xsd:string"/>
+      <xsd:element name="godzina" type="xsd:time" />
+      <xsd:element name="opis" type="xsd:string"/>
+  </xsd:sequence>
+  <xsd:attribute name="idTrener" use="required"  type="xsd:string"/>
+  <xsd:attribute name="idSala" use="required"  type="xsd:string"/>
+</xsd:complexType>
+  
+  
+    <xsd:complexType name="extended_czas_trwania">
+    <xsd:simpleContent>
+      <xsd:extension base="powierzchnia_type">
+        <xsd:attribute name="jednostka" type="xsd:string" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  
+  <xsd:simpleType name="czas_trwania_type">
+    <xsd:restriction base="xsd:short">
+      <xsd:minExclusive value="0"/>
+      <xsd:maxExclusive value="200"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  
+  <xsd:complexType name="sprzety_type">
+   <xsd:sequence>
+     <xsd:element name="sprzet" type="sprzet_type" minOccurs="1" maxOccurs="unbounded"/>
+   </xsd:sequence>
+ </xsd:complexType>
+
+<xsd:complexType name="sprzet_type">
+  <xsd:sequence>
+      <xsd:element name="nazwa" type="xsd:string"/>
+      <xsd:element name="firma" type="capitalize_type"/>
+      <xsd:element name="ilosc" type="xsd:nonNegativeInteger" />
+      <xsd:element name="opis"  type="opis_type" minOccurs="1" maxOccurs="unbounded"/>
+  </xsd:sequence>
+</xsd:complexType>
+  
+  <xsd:simpleType name="opis_type">
+    <xsd:union memberTypes="xsd:string brak_danych"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="brak_danych">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Brak danych"/>
+      <xsd:enumeration value="brak danych"/>
+      <xsd:enumeration value="Brak informacji"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+</xsd:schema>

@@ -2,7 +2,7 @@
 school tasks, projects in XML
 
 
-LAB 1
+<h5>LAB 1<h5>
 
 
 Zadanie 1. Dany jest plik XML. Postaraj siê odgan¹æ czy plik ma prawid³ow¹ sk³adnie oraz jakie s¹ ewentulane b³êdy. Nastêpnie przy pomocy walidatora lub przegl¹darki internetowej, sprawdŸ czy zosta³ poprawnie skonstruowany. Je¿eli nie popraw b³êdy w mo¿liwie najprostrzy sposób.
@@ -21,7 +21,7 @@ UWAGA: Przy wykonywaniu tego zadania nale¿y zachowaæ ostro¿noœæ, aby nie odebraæ
 
 
 
-LAB 2
+<h5>LAB 2<h5>
 
 Zadanie 1. Stwórz plik XML, który bêdze zawiera³ dane na temat studentów informatyki, którzy zostali podzieleni na 3 grupy (stwórz 3 elementy o nazwie grupa z atrybutem odpowiadaj¹cemu numerowi danej grupy). W ka¿dej grupie powinno znajdowaæ siê conajmniej 5 osób (imiê, nazwisko, nr albumu jako elementy, p³eæ jako atrybut). Do³¹cz do pliku XML pusty plik CSS oraz sprawdŸ w przegl¹rce jak zmieni³ siê jego wygl¹d. 
 
@@ -55,7 +55,7 @@ ZadaniaCSS
 
 
 
-LAB 3
+<h5>LAB 3<h5>
 
 Zadanie 1. Stwórz plik DTD zawieraj¹cy deklaracjê elementów takich, ¿e:
 element g³ówny o nazwie glowny zawiera conajmniej piêæ elementów podrzêdnych o nazwie podrzedny.
@@ -129,7 +129,7 @@ powinny zawieraæ wartoœæ tekstow¹ wewn¹trz.
 
 
 
-LAB 4
+<h5>LAB 4<h5>
 
 
 Zadanie 1. Dany jest plik XML. Stwórz odpowiedni plik DTD zawieraj¹cy encjê ogóln¹ wewnêtrzn¹ autor, która przyjmie twoje imiê i nazwisko oraz copy, który przyjmie symbol ©. SprawdŸ jak bêdzie wygl¹da³ plik XML w przegl¹darce je¿eli zdefinijesz DTD w odzielnym pliku i wewn¹trz XML.
@@ -151,7 +151,7 @@ Zadanie 7. Stwórz plik XML zawieraj¹cy element g³ówny matura oraz plik DTD, zawi
 
 
 
-LAB 5
+<h5>LAB 5<h5>
 
 Zadanie 1. Stwórz plik XML-Schema zawieraj¹cy deklaracjê elementów takich, ¿e element g³ówny o nazwie pracownik bêdzie zawiera³ elementy: imie, nazwisko, wiek, data_urodzenia, pensja w podanej kolejnoœci. Zastosuj odpowiedni typ danych.
 Przetestuj dzia³anie Schema na pliku XML.
@@ -178,7 +178,7 @@ atrybut plec, który mo¿e przyj¹c wartoœæ "kobieta" lub "mê¿czyzna"
 Zadanie 7. Stwórz plik XML-Schema zawieraj¹cy deklaracjê elementu g³ównego o nazwie punkty, który bêdzie zawiera³ listê 5-ciu liczb ca³kowitych z zakresu 0-10 lub napis "brak danych".
 
 
-LAB 6
+<h5>LAB 6<h5>
 
 Zadanie 1. Stwórz plik XML-Schema zawieraj¹cy deklaracjê elementu g³ównego o nazwie cena, który bêdzie zawiera³ cenê. Czêœæ ca³kowita i dziesiêtna musi byæ odzielona kropk¹ (.). Cena musi byæ liczb¹ dodatni¹ lub równa zero, która zawiera 2 miejsca po przecinku. Wykorzystaj wzorce.
 
@@ -196,7 +196,7 @@ Zadanie 6. Dane s¹ plik XML-Schema (1), plik XML-Schema (2), plik XML-Schema (3)
 
 
 
-LAB 7
+<h5>LAB 7<h5>
 
 Zadanie 1. Stwórz plik XML-Schema dla pliku XML, zawieraj¹cego dane na temat pracowników i uczniów w szkole. Plik powinien zawieraæ 3 elementy: nauczyciele, uczniowe, pozostali, które bêd¹ zwieraæ odpowiednie dane na temat osób (elementy osoba przechowuj¹ce dane osobowe). Utwórz oraz wykorzystaj globalny element osoba oraz aaaatrybut plec.
 
@@ -266,7 +266,7 @@ Zastosuj odpowiedni typ danych do elementów i atrybutów.
 
 
 
-LAB 8
+<h5>LAB 8<h5>
 
 Zadanie 1. Skontruuj œciê¿kê, która z pliku osoby.xml wypisze dane osób, które s¹ kobietami.
 
@@ -310,7 +310,7 @@ Zadanie 20. Skontruuj œcie¿kê, która z pliku osoby.xml znajdzie adres osoby, któ
 
 
 
-LAB 9
+<h5>LAB 9<h5>
 Zadanie 1. Stwórz arkusz XSLT, który przekszta³ci plik osoby.xml, w inny plik XML, który bêdzie zawiera³ element g³ówny lista oraz elementy osoba, które bêd¹ zawieraæ podelementy imie i nazwisko oraz atrybut grupa z odpowiednimi wartoœciami. Przekszta³cony XML.
 
 Zadanie 2. Stwórz arkusz XSLT, który przekszta³ci plik osoby.xml, w inny plik XML, który bêdzie zawiera³ element g³ówny lista oraz elementy osoba, które bêd¹ zawieraæ podelementy imie, nazwisko z odpowiednimi wartoœciami osób, które s¹ m³odsze ni¿ 30 lat. Przekszta³cenie powinno dodaæ komentarz: "Osoby m³odsze ni¿ 30 lat" Przekszta³cony XML.
@@ -320,24 +320,24 @@ Zadanie 3. Stwórz arkusz XSLT, który przekszta³ci plik osoby.xml, w inny plik XM
 Zadanie 4. Stwórz arkusz XSLT, który przekszta³ci plik osoby.xml, w plik HTML, który bêdzie obrazowa³ imiona i nazwiska wszystkich osób w postaci listy numerycznej w taki sposób, aby osoby z ka¿dej grupy by³y w ró¿nych kolorach.
 Przyk³ad:
 ZadaniaXSLT
-PodpowiedŸ: Wykorystaj znaczniki <ol>, <li>, <span>.
+PodpowiedŸ: Wykorystaj znaczniki &lt;ol&gt;, &lt;li&gt;, &lt;span&gt;.
 
 Zadanie 5. Stwórz arkusz XSLT, który przekszta³ci plik osoby.xml, w plik HTML, który bêdzie obrazowa³ imiona i nazwiska wszystkich osób w postaci wypunktowanej listy w taki sposób, aby osoby z ka¿dej p³ci by³y w ró¿nych kolorach. Dane osób powinny byæ posortowane rosn¹co wed³ug p³ci i malej¹co wed³ug wieku.
 Przyk³ad:
 ZadaniaXSLT
-PodpowiedŸ: Wykorystaj znaczniki <ul>, <li>, <span>.
+PodpowiedŸ: Wykorystaj znaczniki &lt;ul&gt;, &lt;li&gt;, &lt;span&gt;.
 
 Zadanie 6. Stwórz arkusz XSLT, który przekszta³ci plik osoby.xml, w plik HTML, który bêdzie obrazowa³ imiona i nazwiska wszystkich osób w postaci w taki spobób, aby ka¿da grupa znajdowa³a siê osobno. Dodatkowo ka¿da osoba znajdujaca sie na parzystaj i nie parzystej pozycji powinna byæ oznaczona innym kolorem t³a.
 Przyk³ad:
 ZadaniaXSLT
-PodpowiedŸ: Wykorystaj znaczniki <hliczba>, <table>, <tr>, <th>.
+PodpowiedŸ: Wykorystaj znaczniki &lt;hliczba&gt;, &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;.
 
 Zadanie 7. Stwórz arkusz XSLT, który przekszta³ci plik osoby.xml, w plik HTML, który bêdzie obrazowa³ imiona i nazwiska i grupy wszystkich osób, których imiê i nazwisko jest d³u¿sze ni¿ 12. Przed numerem grupy pownien pojawiæ siê napis grupa, który powinien byæ podkreœlony. Nazwisko powinno byæ pogrubione oraz numer grupy powinien byæ pochylony.
 Przyk³ad:
 ZadaniaXSLT
-PodpowiedŸ: Wykorystaj znaczniki <table>, <tr>, <th>, <b>, <i>, <u>.
+PodpowiedŸ: Wykorystaj znaczniki &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;.
 
 Zadanie 8. Stwórz arkusz XSLT, który przekszta³ci plik osoby.xml, w plik HTML, który bêdzie obrazowa³ dane na temat iloœci i œredniej wieku zaokr¹glonej do dwóch miejsc po przecinku wszystkich osób, osób z ka¿dej grupy oraz p³ci. Dane powinny zostaæ wyliczone przy pomocy arkusza.
 Przyk³ad:
 ZadaniaXSLT
-PodpowiedŸ: Wykorystaj znaczniki <table>, <tr>, <th>.
+PodpowiedŸ: Wykorystaj znaczniki &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;.
