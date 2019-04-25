@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nauka>
+    <rodzaje>
+		<rodzaj>męski</rodzaj>
+		<rodzaj>żeński</rodzaj>
+		<rodzaj>nijaki</rodzaj>
+	</rodzaje>
+	<rzeczowniki>
+		<rzeczownik>
+			<nazwa>Kwiat</nazwa>
+			<rodzaj>męski</rodzaj>
+		</rzeczownik>
+		<rzeczownik>
+			<nazwa>Kawa</nazwa>
+			<synonimy>Kawusia Neska</synonimy>
+			<rodzaj>żeński</rodzaj>
+		</rzeczownik>
+		<rzeczownik>
+			<nazwa>Lekarz</nazwa>
+			<synonimy>Doktor Medyk</synonimy>
+			<rodzaj>męski</rodzaj>
+		</rzeczownik>
+		<rzeczownik>
+			<nazwa>Okno</nazwa>
+			<rodzaj>nijaki</rodzaj>
+		</rzeczownik>
+		<rzeczownik>
+			<nazwa>Ziemia</nazwa>
+			<synonimy>Grunt Gleba Rola</synonimy>
+			<rodzaj>żeński</rodzaj>
+		</rzeczownik>
+		<rzeczownik>
+			<nazwa>Ziarno</nazwa>
+			<synonimy>Nasienie</synonimy>
+			<rodzaj>nijaki</rodzaj>
+		</rzeczownik>
+		<rzeczownik>
+			<nazwa>Zwierzę</nazwa>
+			<synonimy>Bestia Stworzenie</synonimy>
+			<rodzaj>żeński</rodzaj>
+		</rzeczownik>
+		<rzeczownik>
+			<nazwa>Dziupla</nazwa>
+			<rodzaj>żeński</rodzaj>
+		</rzeczownik>
+		<rzeczownik>
+			<nazwa>Pies</nazwa>
+			<rodzaj>męski</rodzaj>
+		</rzeczownik>
+	</rzeczowniki>
+</nauka>

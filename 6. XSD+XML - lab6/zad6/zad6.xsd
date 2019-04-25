@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.firma.org" xmlns="http://www.firma.org"
+	xmlns:m="http://prz_nazw1" xmlns:d="http://prz_nazw1" xmlns:a="http://prz_nazw2"
+	elementFormDefault="qualified">
+
+  <xsd:import namespace="http://prz_nazw1" schemaLocation="zad6a.xsd" />
+  <xsd:import namespace="http://prz_nazw1" schemaLocation="zad6b.xsd" />
+  <xsd:import namespace="http://prz_nazw2" schemaLocation="zad6c.xsd" />
+
+  <xsd:element name="firma">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="miejsce" type="m:typDaneMiejsca" />
+        <xsd:element name="pracownik" type="d:typDaneOsobowe" />
+        <xsd:element name="adres" type="a:typAdres" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

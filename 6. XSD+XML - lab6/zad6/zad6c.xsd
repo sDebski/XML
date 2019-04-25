@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:prz2="http://prz_nazw2"
+        targetNamespace="http://prz_nazw2">
+
+	<xsd:complexType name="typAdres">
+		<xsd:sequence>
+			<xsd:element name="miejscowosc"   type="xsd:string"/>
+			<xsd:element name="ulica" type="xsd:string"/>
+			<xsd:element  name="kod_pocztowy" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

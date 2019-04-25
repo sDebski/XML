@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<firma xmlns="http://www.firma.org" xmlns:firma="http://www.firma.com"
+	xmlns:m="http://prz_nazw1" xmlns:d="http://prz_nazw1" xmlns:a="http://prz_nazw2"
+	xmlns:schemaLocation="http://www.firma.org
+                    zad6.xsd
+                    http://prz_nazw1
+                    zad6a.xsd
+                    http://prz_nazw1
+                    zad6b.xsd
+                    http://prz_nazw2
+                    zad6c.xsd">
+  <miejsce>
+    <m:nazwa>Macdonald</m:nazwa>
+    <m:opis>Fast-Food</m:opis>
+  </miejsce>
+  <pracownik d:plec="Kobieta">
+    <d:imie>Agnieszka</d:imie>
+    <d:nazwisko>Testowa</d:nazwisko>
+  </pracownik>
+  <adres>
+    <a:miejscowosc>Gdynia</a:miejscowosc>
+    <a:ulica>Grunwaldzka 12</a:ulica>
+    <a:kod_pocztowy>81-334</a:kod_pocztowy>
+  </adres>
+</firma>

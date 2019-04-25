@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<zamowienie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="zad6.xsd" numer_zamowienia="n1">
+  <adres termin_dostarczenia='10-10-2010' kraj='Polska'>
+    <miejsce>Szpital</miejsce>
+    <ulica>Komara</ulica>
+    <kod_pocztowy>12-123</kod_pocztowy>
+  </adres>
+  <artykuly>
+    <artykul id="a1">
+      <film>
+        <tytul>Lord</tytul>
+        <autor>Peter Jackson</autor>
+        <rok_wydania>01-01-2001</rok_wydania>
+        <czas_trwania>2 h</czas_trwania>
+      </film>
+    </artykul>
+    <artykul id="a2">
+      <ksiazka>
+        <tytul>Manamam</tytul>
+        <autor>Man Manar</autor>
+        <rok_wydania>02-02-2002</rok_wydania>
+        <nr_wydania>100</nr_wydania>
+      </ksiazka>
+    </artykul>
+    <artykul id="a3">
+      <plyta>
+        <tytul>Mocna</tytul>
+        <wykonawca>Dr. Autor</wykonawca>
+        <wydawca>Si-Studio</wydawca>
+        <rok_wydania>03-03-2003</rok_wydania>
+        <czas_trwania>1 h</czas_trwania>
+      </plyta>
+    </artykul>
+  </artykuly>
+</zamowienie>
