@@ -2,13 +2,14 @@
 <!DOCTYPE silownia SYSTEM "DTD.dtd">
 
 <?xml-stylesheet type="text/css" href="style.css" ?>
-<silownia nazwa="Sport Connect"> 
+<silownia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="XSD.xsd" nazwa="Sports Connect">
   <adres_silowni>
     <miasto>Gdansk</miasto>
     <ulica>ul. Jagielonska</ulica>
     <numer>37</numer>
     <kod>83-330</kod>
-    <nic/>
+    <nic nic="nic"/>
   </adres_silowni>
   <wlasciciel>
     <imie>Oleg</imie>
@@ -181,13 +182,13 @@
     <zajecie idTrener="t1" idSala="s2">
       <czas_trwania jednostka="minuty">120</czas_trwania>
       <dzien_tygodnia>Czwartek</dzien_tygodnia>
-      <godzina>18:00</godzina>
+      <godzina>18:00:00</godzina>
       <opis>Zajecia przygotowujące do Trojboju silowego</opis>      
     </zajecie>
     <zajecie idTrener="t2" idSala="s1">
       <czas_trwania jednostka="minuty">120</czas_trwania>
       <dzien_tygodnia>Środa</dzien_tygodnia>
-      <godzina>16:00</godzina>
+      <godzina>16:00:00</godzina>
       <opis>
         Zajecia Crosfitowe wzmacniające motorykę
       </opis>
@@ -195,13 +196,13 @@
     <zajecie idTrener="t3" idSala="s3">
       <czas_trwania jednostka="minuty">60</czas_trwania>
       <dzien_tygodnia>Piątek</dzien_tygodnia>
-      <godzina>19:00</godzina>
+      <godzina>19:00:00</godzina>
       <opis>Zajecia z Zumby</opis>
     </zajecie>
     <zajecie idTrener="t4" idSala="s4">
       <czas_trwania jednostka="minuty">60</czas_trwania>
       <dzien_tygodnia>Piątek</dzien_tygodnia>
-      <godzina>20:00</godzina>
+      <godzina>20:00:00</godzina>
       <opis>Zajecia na rowerkach</opis>
     </zajecie>    
   </zajecia>

@@ -42,6 +42,7 @@
 
 <!ATTLIST %k; id ID %r;>
 <!ATTLIST %k; %pl; (k|m|b) "b">
+<!ATTLIST nic nic NMTOKEN #IMPLIED>
 
 <!ELEMENT %sa; (nazwa, powierzchnia)>
 <!ATTLIST sala id ID %r;>
