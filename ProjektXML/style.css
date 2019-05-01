@@ -2,17 +2,19 @@
 silownia {
     background-image: url('silownia.jpg');
 }
-trenerzy, klienci, zajecia, sale, sprzety{
+trenerzy, klienci, zajecia, sale, sprzety {
     margin: 5px;
     display: inline-block;
     border: solid 3px;
-    background-color:aliceblue;
+    background-color: aliceblue;
+    margin-left: 2%;
 }
 
-trenerzy:hover, klienci:hover, zajecia:hover, sale:hover, sprzety:hover {
-    background-color:aquamarine;
-
-}
+    trenerzy:hover, klienci:hover, zajecia:hover, sale:hover, sprzety:hover {
+        background-color: aquamarine;
+        transform: scale(1.08);
+        transition-duration: .5s;
+    }
  
 sprzet:hover, zajecie:hover, sala:hover{
     background-color:darksalmon;
@@ -25,15 +27,21 @@ trener, klient, sala, zajecie, sprzet  {
 }
 
 wlasciciel, adres_silowni {
-    background-color:bisque;
+    background-color: bisque;
     display: block;
     border: solid 3px;
     margin: 15px;
+    width: 30%;
+    height: 50px;
+    position:center;
+    margin-left:30%;
 }
 
-adres_silowni:hover, wlasciciel:hover {
-    background-color: burlywood;
-}
+    adres_silowni:hover, wlasciciel:hover {
+        background-color: burlywood;
+        transition-duration: .5s;
+        transform: scale(1.1);
+    }
 
 
 adres_silowni::before{
